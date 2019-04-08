@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import SavedList from './Movies/SavedList';
 import MovieList from './Movies/MovieList';
 import Movie from './Movies/Movie';
@@ -24,7 +24,7 @@ export default class App extends Component {
         <SavedList list={this.state.savedList} />
         <div>
           <Route exact path='/' component ={MovieList} />
-          <Route exact path='/Movies/:id' component={Movie} />
+          <Route exact path='/movies/:id' component={Movie} />
         </div>
       </div>
     );
